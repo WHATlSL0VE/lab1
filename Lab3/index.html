@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Shop 2.0</title>
+</head>
+
+<body>
+
+<form action="#" method="get" name="order_info">
+
+    <table width="420" align="center" border="1">
+
+        <tr>
+            <th colspan="2">Pizza Shop 2.0</th>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td><input required type="text" name="name" placeholder="Enter your name..."></td>
+        </tr>
+        <tr>
+            <td>Pizza Topping</td>
+            <td>
+
+                <label>
+                    <input required type="radio" name="topping" value="supreme">
+                    Supreme
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="topping" value="vegeterian">
+                    Vegeterian
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="topping" value="hawaiian">
+                    Hawaiian
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Pizza Sauce</td>
+            <td>
+                <select name="sauses_type">
+                    <option value="tomato">Tomato</option>
+                    <option value="mayonez">Garlic</option>
+                    <option value="mayonez">Cheese</option>
+                    <option value="mayonez">Pesto</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Optional Extras</td>
+            <td>
+                <input type="checkbox" name="cheese" value="yes" id="cheese">
+                <label for="cheese">Extra Cheese</label>
+                <input type="checkbox" name="gluten" value="yes" id="gluten">
+                <label for="gluten">Gluten Free Base</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>
+                    Delivery Instructions:<br>
+                    <textarea required name="adress" placeholder="Enter your address..." cols="55" rows="4"></textarea>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Send my Order</button>
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+
+
+</body>
+
+</html>
